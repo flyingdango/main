@@ -1,5 +1,5 @@
 d3.select(window).on("scroll",function(){
-	console.log(d3.event.pageY);
+	console.log(d3.event);
 	d3.select("#bb")
 		.style("left",function(){
 			return d3.event.pageX<1500 ? d3.event.pageX+"px" : "1500px";
