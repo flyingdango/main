@@ -2,11 +2,13 @@ d3.select(window).on("scroll",function(){
 	var st=document.body.scrollTop+document.documentElement.scrollTop;
 	var sl=document.body.scrollLeft+document.documentElement.scrollLeft;
 	d3.select("#bb")
+		.transition()
+		.duration(50)
 		.style("left",function(){
-			return sl<1500 ? sl+"px" : "1500px";
+			return sl<1500 ? parseInt(sl)+"px" : "1500px";
 		})
 		.style("top",function(){
-			return st<1500 ? st+100+"px" : "1600px";
+			return st<1500 ? parseInt(st)+100+"px" : "1600px";
 	});
 	d3.event.stopPropagation();
 })

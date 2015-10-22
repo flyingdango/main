@@ -29,7 +29,7 @@ var curve=d3.svg.diagonal()
   		var a= (d.x-90)/180*Math.PI;
   		return [r *Math.cos(a),r*Math.sin(a)];
 	});
-d3.json("effects.json",function(data){
+d3.json("./data/effects.json",function(data){
 	var nodes=cluster.nodes(data);
 	var links=cluster.links(nodes);
 	svg.selectAll("path.line")
