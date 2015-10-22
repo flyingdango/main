@@ -63,7 +63,7 @@ d3.json("effects.json",function(data){
 			d3.select("#note_head")
 				.text(function(){return d.data.text});
 			d3.select("#note_text")
-				.text(function(){return d.data.note});
+				.text(function(){return d.data.note ? d.data.note : "暂无简介"});
 			d3.event.stopPropagation();
 		});
 	var pth=192;

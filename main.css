@@ -11,7 +11,7 @@ body{
 #note{
 	padding: 10px;
 	font-size: 18px;
-	font-family: "微软雅黑";
+	font-family: "微软雅黑","宋体";
 	position: absolute;
 	width: 400px;
 	height: 400px;
@@ -29,6 +29,6 @@ body{
 }
 .text{
 	font-size: 12px;
-	font-family: "arial";
+	font-family: "微软雅黑","arial";
 	fill:#FFF;
 }
