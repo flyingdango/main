@@ -1,0 +1,1982 @@
+{
+  "data": {
+    "text": "Effects",
+    "expandState": "expand",
+    "note": "Edit by 飞舞的团子\n里面提到的教程多数需要翻墙；\n教程仅供参考；思路不要被教程局限；\n[官方中文帮助](https://helpx.adobe.com/cn/after-effects/using/effect-list.html#simulation_effects)"
+  },
+  "children": [
+    {
+      "data": {
+        "text": "3D Channel",
+        "expandState": "expand"
+      },
+      "children": [
+        {
+          "data": {
+            "text": "3D Channel Extract",
+            "note": "可以提取3D渲染图像中有的通道；\n但是现在的工作流都是分文件渲；\n这些自带通道的格式也很远古；\n所以这玩意也几乎没用；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Depth Matte",
+            "note": "利用z通道进行z轴蒙版；但是这个需要内部自带z通道；所以也几乎没用；\n正常的方法都是用单独的z通道加曝光等效果调节以后给图像作亮度蒙版；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Depth of Field",
+            "note": "景深；现在都用fl_dof的插件或者自带的镜头模糊；这玩意儿完全没用；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "EXtractoR",
+            "note": "可以提取封装型exr图像内的通道；但是现在都是分文件；这个用处不是特别大了；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Fog 3D",
+            "note": "3D雾效；不好调节；一般都是用z通道配合曝光给一个雾素材当蒙版来制作；很少用这个；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "ID Matte",
+            "note": "提取物体/材质ID；现在都分文件了；这个也就没用了；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "IDentifier",
+            "note": "提取物体/材质ID作为蒙版；现在都分文件了；这个也就没用了；"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "data": {
+        "text": "Audio",
+        "expandState": "expand"
+      },
+      "children": [
+        {
+          "data": {
+            "text": "Backwards"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Bass & Treble"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Delay"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Flange & Chorus"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "High-Low Pass"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Modulator"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Parametric EQ"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Reverb"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Stereo Mixer"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Tone"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "data": {
+        "text": "Blur & Sharpen",
+        "expandState": "expand"
+      },
+      "children": [
+        {
+          "data": {
+            "text": "Bilateral Blur",
+            "note": "表面模糊"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Box Blur",
+            "note": "盒子模糊；一次迭代下为方块状模糊；高迭代下为加强版的快速模糊；因为其独特的盒状特性；还是有点用的；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Camera Lens Blur",
+            "note": "镜头模糊；虽然比不上插件；但还算可以；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Cross Blur",
+            "note": "十字模糊；利用其叠加模式可以到达一些隐藏效果；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Radial Blur",
+            "note": "基本同Radial Blur；精度和速度略有不同；径向模糊带有旋转（不重复边缘）；\n"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Radial Fast Blur",
+            "note": "很好用的一个放射模糊；可选高光和暗部；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Vector Blur",
+            "note": "矢量模糊；利用一个通道（自身或外部）临近点亮度信息计算矢量；再按矢量进行模糊；在处理烟雾流体等对象时有用；还有很多独特的用法；\n它的算法其实是很先进的；houdini烟雾和火焰就自带这种模糊算法；只不过AK没出过教程；所以暂时鲜为人知；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Channel Blur",
+            "note": "单通道的模糊；润色的时候有时会用；\n[motionworks教程](http://motionworks.net/after-effects-a-z-channel-blur/)"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Compound Blur",
+            "note": "复合模糊；利用一个通道的亮度信息进行模糊；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Directional Blur",
+            "note": "方向模糊；比较平庸；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Fast Blur",
+            "note": "快速模糊；带重复边缘；模糊里最常用的一个；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Gaussian Blur",
+            "note": "有快速模糊这个就没用了；模糊效果和快速模糊一样；速度不如快速模糊；也没重复边缘功能；\n很多资料上说这货更细腻；其实是完全一样的；不信可以用difference模式去检测；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Radial Blur",
+            "note": "放射/径向模糊；速度略慢；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Reduce Interlace Flicker",
+            "note": "去闪烁；现在用不到了；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Sharpen",
+            "note": "简单的锐化功能；要用；但是千万不能用过；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Smart Blur",
+            "note": "表面模糊的加强版；可以降低图像杂质；略慢；\n还能提取轮廓线；做一些特殊效果；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Unsharp Mask",
+            "note": "这货用的智能模糊的选择算法来做锐化；\n[亮度锐化技巧](http://provideocoalition.com/f/story/luma_processing)"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "data": {
+        "text": "Channel",
+        "expandState": "expand",
+        "note": ""
+      },
+      "children": [
+        {
+          "data": {
+            "text": "Arithmetic",
+            "note": "Arithmetic 每通道算法\nand:\nor:\nxor:\n上面三个二进制算法\nadd：单纯加\nsubtract：单纯减\ndifferencr：先比较原值与128；小则加色；大则减色；加减值=abs（原值-128）/128x255=abs（原值-128）x2\nmin：原值与设定值取大\nmax：原值与设定值取小\nblock above：原值超过设定值的全部归零；其余不变\nblock below：原值小于设定值的全部归零；其余不变\nslice：自身比设定值；大则255；小则0\nmultiply：先归零；再加；加值=原值x（设定值/255）\nscreen：同add；但不会溢出\n\nclipping：超出255的部分设为255；不勾选超出255时就无效"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Blend",
+            "note": "混合两个层；产生多种叠画效果；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Calculations",
+            "note": "同ps应用图像；应用图像的各通道对图像进行叠加算法；\n经典效果之一是正片负冲；我教程里有；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Composite",
+            "note": "非常有用的一个效果；能大幅简化叠加操作；\n在我的套路里应用很广泛；\n简单的说就是将原始图像叠到现有图像上；叠加模式可选；放后面也可以；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Channel Commbiner",
+            "note": "通道组中最强的一个；从抠像到通道转换到alpha优化再到YUV（lab）调色都有用；\n[motionworks教程](http://motionworks.net/after-effects-a-z-channel-combiner/)"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Compound Arithmetic",
+            "note": "Arithmetic的加强版；利用外部通道对图像进行Arithmetic算法；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Invert",
+            "note": "反相；用的好能产生很强的冲击力；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Minmax",
+            "note": "在指定范围内用范围内最大或最小值填充；\n范围是接近方形的；\n是很多仿艺术效果的前提（水墨，水彩..）"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Remove Color Matting",
+            "note": "移除颜色蒙版；只对半透明像素有效；一般优化边缘使用；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Set Channels",
+            "note": "强行设置一个图像的通道；通道可以来自控件图层；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Set Matte",
+            "note": "设置蒙版；利用一个通道作为蒙版；\n还有一些很神奇的用法，比如长阴影；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Shift Channels",
+            "note": "换通道；只能自身；外部的用Set Channels;"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Solid Composite",
+            "note": "一般用来给图像加个黑背(做glow时会有用)或者加个单色滤镜；"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "data": {
+        "text": "Color Correction",
+        "expandState": "expand"
+      },
+      "children": [
+        {
+          "data": {
+            "text": "Auto Color",
+            "note": "自动颜色"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Auto Contrast",
+            "note": "自动对比度"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Auto Levels",
+            "note": "自动色阶；自动的玩意不是完全没用的；特别对于动态图像；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Black & White",
+            "note": "黑白，配合light/dark color ，lighten等叠加模式，实现黑白但只留某些色彩的效果，也可以做单色的效果"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Brightness & Contrast",
+            "note": "简单的调节全部亮度及对比度的效果，使用方便；CC里面还做了改进；效果好了很多；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Broadcast Colors",
+            "note": "检测广播安全的，对大多数工作来讲，没什么用"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Color Neutralizer",
+            "note": "十分特殊的一个效果；可用于还原偏色的图像；相当于调色的逆向；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Color Offset",
+            "note": "红绿蓝偏色的；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Kernel",
+            "note": "CC核心；线条效果；但是没见过有用的实例；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Toner",
+            "note": "三色调，上色很有用；\n1,2,3,5色可选"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Change Color",
+            "note": "改指定颜色，偶尔会用到；\n[motionworks教程](http://motionworks.net/after-effects-a-z-change-color/)"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Change to Color",
+            "note": "和上一个没什么大区别"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Channel Mixer",
+            "note": "通道混合器，和ps的一样，有其不可替代的作用"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Color Balance",
+            "note": "色彩平衡，和ps的一样"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Color Balance(HLS)",
+            "note": "调整体色相亮度对比度的"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Color Link",
+            "note": "颜色匹配用，属于被遗忘的神器"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Color Stabilizer",
+            "note": "平衡帧间亮度；可以用高光、高光暗部、高光中间暗部控制；处理延时摄影的素材很有用；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Colorama",
+            "note": " 调色组中最强的一个；类似渐变映射，功能很强，有很多高级的效果都依赖它"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Curves",
+            "note": "最常用三个调色方法之一；新版对UI做了改进;"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Equalize",
+            "note": "色彩匀化/自动补偿；一介调色时很有用；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Exposure",
+            "note": "曝光；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Gamma/Pedestal/Gain",
+            "note": "色阶的gamma与左右的偏移"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Hue/Saturation",
+            "note": "最常用三个调色方法之一"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Leave Color",
+            "note": "留下某种颜色，其他变黑白"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Levels",
+            "note": "最常用三个调色方法之一"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Levels(Individual Controls)",
+            "note": "分开调节levels，上面那个是切换调节，两者是一样的"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Photo Filter",
+            "note": "滤镜，很好用"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "PS Arbitrary Map",
+            "note": "兼容早期版本而存在的特效，现在都用curves"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Selective Color",
+            "note": "可选颜色，界面不直观，没ps方便"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Shadow/Highlight",
+            "note": "平滑高光与阴影的，要配合降噪"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Tint",
+            "note": "黑白"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Tritone",
+            "note": "另一个三色调；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Vibrance",
+            "note": "自然饱和度"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "data": {
+        "text": "Distort",
+        "expandState": "expand",
+        "note": ""
+      },
+      "children": [
+        {
+          "data": {
+            "text": "Bezier Warp",
+            "note": "贝塞尔扭曲；AK有个教程用它做流光元素；\n[教程](http://www.videocopilot.net/tutorials/moving_3d_lines/)\n\n有越界bug；不过不乱调不会有事；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Bulge",
+            "note": "膨胀；AK有个教程用它实现很科幻的收缩效果；\n[教程](http://www.videocopilot.net/tutorials/playlist/motion_design/advanced_spin_fx/)"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Bend It",
+            "note": "和下面那个很像；能实现弯曲效果；\n不过调节没有下面那个好用；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Bender",
+            "note": "也是弯曲；一般用这个较多；\nQB有个教程比较这两者的；\n[教程](http://motionworks.net/after-effects-a-z-cc-bender-bend-it/)"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Blobbylize",
+            "note": "融化溅落；模拟融化效果；\n有灯光和材质选项；\n[motionworks教程](http://motionworks.net/after-effects-a-z-cc-blobbylize/)"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Flo Motion",
+            "note": "两点扭曲；带很花哨的重复效果；\n[motionworks教程](http://motionworks.net/after-effects-a-z-cc-flo-motion/)"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Griddler",
+            "note": "这个与其说是扭曲组；不如说是过渡组的；\n一个网格过渡效果；结合其他的网格型效果还不错；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Lens",
+            "note": "透镜；广角效果；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Page Turn",
+            "note": "卷叶；可惜是2D的；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Power Pin",
+            "note": "一种边角固定；比cornerPin功能多；\n能用来提取材质；\nmocha可用；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Ripple Pulse",
+            "note": "波纹；要设置关键帧才有效果；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Slant",
+            "note": "倾斜"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Smear",
+            "note": "涂抹；配合toComp不错；\n\n有越界bug；数值不要调太大；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Split",
+            "note": "简易的撕裂效果"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Split2",
+            "note": "比上面那个高级些；带额外参数界面(about旁边)独立控制；\n好像某人的嘴型脚本就是靠这货做的；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Tiler",
+            "note": "平铺；注意善用bwo;"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Corner Pin",
+            "note": "边角固定；mocha可用；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Detail-preserving Upscale",
+            "note": "CC新加的一种放大算法；\n可以理解为高质量放大；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Displacement Map",
+            "note": "置换贴图；\n利用通道信息对像素位置进行偏移；\nAK几个有个很不错的教程\n[国王谷甲虫](http://www.videocopilot.net/tutorials/skin_displacement/)\n[3D冰层](http://www.videocopilot.net/tutorials/translucent_glass/)\n[海面](http://www.videocopilot.net/tutorials/3d_ocean/)"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Liquify",
+            "note": "液化；AK有个变形教程用这个；\n[恶魔变形](http://www.videocopilot.net/tutorials/demon_face_warp/)"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Magnify",
+            "note": "放大；带叠加模式；可用来提升色彩和细节；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Mesh Warp",
+            "note": "网格弯曲；合成时比较有用；新版本可以用方向键控制锚点；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Mirror",
+            "note": "镜像"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Offset",
+            "note": "偏移；这货虽然效果简单；但是也能很快提升画面细节；效果出人意料；\n和Tiler有异曲同工之妙；两者可配合使用；\n这个还能做一些无限动画；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Optics Compensation",
+            "note": "镜头合成；可以模拟广角；\n大值可实现一些放射效果；\n"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Polar Coordinates",
+            "note": "极坐标；一般做球都会用这个处理贴图；\nAK教程：\n[水晶球](http://www.videocopilot.net/tutorials/glass_orbs/)\n[星系穿越](http://www.videocopilot.net/tutorials/galactic_orb/)\n\n这个还可以用来把一个对象弯成圆；\n或者把圆的还原；\n[AK冲击波教程](http://www.videocopilot.net/tutorials/shockwaves/)"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Reshape",
+            "note": "Mask控制变形；新版似乎改进了很多；比以前实用了；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Ripple",
+            "note": "水波"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Rolling Shutter Repair",
+            "note": "算新功能之一；\n可以修复一些运动造成的拖尾；\n具体能力未测试；\n应该是PS移植过来的；用反求运动的方法实现；完全看素材；对某些素材效果好；有些素材没用；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Smear",
+            "note": "用mask进行涂抹；\n需要一个源mask和边界mask；\n涂抹需要控制参数变换和百分比；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Spherize",
+            "note": "球化；其实这个更像放大镜效果；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Transform",
+            "note": "变换；很实用的一个功能；\n因为像素层渲染顺序是先特效再变换；\n所以有些时候必须用这个先变换再加特效；\n否则就要预合成；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Turbulent Displase",
+            "note": "紊乱；还是比较常用的；AK的燃烧殆尽教程；\n[燃烧殆尽](http://www.videocopilot.net/tutorials/disintegration/)"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Twirl",
+            "note": "扭转；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Warp",
+            "note": "多种弯曲效果的整合版；略卡；\n而且有越界bug；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Warp Stabilizer VFX",
+            "note": "用变形去除视频抖动；算是新功能；\n需要较长时间跟踪和解算；\n对做高端MV/微电影的人可能会有用；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Wave Warp",
+            "note": "波纹弯曲；有多种类型可选；\n能辅助一些流动效果；"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "data": {
+        "text": "Generate",
+        "expandState": "expand"
+      },
+      "children": [
+        {
+          "data": {
+            "text": "4-Color Gradient",
+            "note": "四色渐变；自带一点去仿色问题的能力；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Advanced Lightning",
+            "note": "高级闪电；AK用这个做过一个很帅的生长效果；\n[THE GRID](http://www.videocopilot.net/tutorials/the_grid/)"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Audio Spectrum",
+            "note": "音频可视化用；可用mask控制路径；\nAK用这个做了很多科技环元素；\n[教程](http://www.videocopilot.net/tutorials/playlist/motion_design/advanced_spin_fx/)\n"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Audio Waveform",
+            "note": "和上面那个几乎一样；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Beam",
+            "note": "一般用来做连线效果；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Glue Gun",
+            "note": "喷胶枪；可以用来做划线效果；\n比书写可控性高；\n还能依靠其材质选项做一些气泡效果；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Light Burst 2.5",
+            "note": "和shine插件类似；配合toComp能实现3d化；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Light Rays",
+            "note": "采样一个小圆内的颜色来生成光线；用颜色多的源发射能产生非常炫的效果；\n也能作为glow使用；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Light Sweep",
+            "note": "扫光；比较普通；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Threads",
+            "note": "编织；能生成一些交叉的纹理；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Cell Pattern",
+            "note": "蜂巢图案；这个东西比看上去强很多；\n多种模式相互配合能实现很多新颖的效果；\n[motionworks教程](http://motionworks.net/after-effects-cell-pattern/)"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Checkerboard",
+            "note": "棋盘格；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Circle",
+            "note": "圆"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Ellipse",
+            "note": "圆环；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Eyedropper Fill",
+            "note": "采样+填充；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Fill",
+            "note": "填充"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Fractal",
+            "note": "分形；无法自定义公式和图案；实用性不高；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Grandint Ramp",
+            "note": "渐变；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Grid",
+            "note": "网格"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Lens Flare",
+            "note": "光斑；有OF以后这玩意没人用了；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Paint Bucket",
+            "note": "油漆桶；可以当魔术棒抠图用；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Radio Waves",
+            "note": "电波；可以用mask自定义外形；做的效果还是挺多的；\n[AK的六边形教程](http://www.videocopilot.net/tutorials/animated_polygon/)"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Scribble",
+            "note": "涂鸦；在mask上产生类似于素描的描边或填充；\n把紊乱开大以后也能实现一些特殊效果；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Stroke",
+            "note": "mask描边效果；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Vegas",
+            "note": "轮廓描边效果；\n能使用mask或通道轮廓；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Write-on",
+            "note": "书写；"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "data": {
+        "text": "Keying",
+        "expandState": "expand",
+        "note": "[免费绿屏素材](http://www.hollywoodcamerawork.com/greenscreenplates.html)"
+      },
+      "children": [
+        {
+          "data": {
+            "text": "Advanced Spill Suppressor",
+            "note": "高级色彩抑制；色彩抑制被移到旧版本以后就用这个了；功能比原来那个强太多了；完美移除残留背景色；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Simple Wire Removal",
+            "note": "钢丝移除；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Color Range",
+            "note": "色彩范围;有多种模式可选；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Difference Matte",
+            "note": "差异蒙版；一般有单独背景的情况下可以用；\n[motionworks教程](http://motionworks.net/after-effects-difference-matte/)"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Extract",
+            "note": "根据亮度抠像；边缘平滑；比亮度键科学；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Inner/Outer Key",
+            "note": "根据mask来抠像；类似ps早期的抽出；\n现在可以考虑使用rotoBursh或powerMatte插件；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Key Cleaner",
+            "note": "优化抠像以后的边缘；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Keylight(1.2)",
+            "note": "AE中最强的扣绿/蓝背插件；\n当年高价从Nuke的公司买来的；\n这货也有很多高级技巧；\n[AK教程](http://www.videocopilot.net/tutorials/advanced_soft_keying/)\n[AETUTS教程](http://cgi.tutsplus.com/tutorials/advanced-spill-suppression-methods--ae-23722)"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Linear Color Key",
+            "note": "可算是一个色彩范围；阈值控制更柔和；"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "data": {
+        "text": "Matte",
+        "expandState": "expand",
+        "note": ""
+      },
+      "children": [
+        {
+          "data": {
+            "text": "Matte Chocker",
+            "note": " 收边+柔化效果\n 做融合效果或优化边缘；去除杂点有用；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "mocha shape",
+            "note": "用于mocha的形状导入；不过一般都是用mask；不用这种；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Refine Hard Matte",
+            "note": ""
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Refine Soft Matte",
+            "note": ""
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Simple Choker",
+            "note": "简单的收边效果；做融合效果有用；"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "data": {
+        "text": "Noise & Grain",
+        "expandState": "expand",
+        "note": ""
+      },
+      "children": [
+        {
+          "data": {
+            "text": "Add Grain",
+            "note": "添加噪点；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Dust & Scratches",
+            "note": "匀化相邻像素来去除杂点；速度很慢；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Fractal Noise",
+            "note": "分形噪波；AE内置插件中可以排前5的一个效果；\n原理是利用分形的手段来重复一层噪波；\n能实现n多种纹理效果；\n一般要配合一些上色效果给与颜色；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Match Grain",
+            "note": "匹配素材噪点"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Median",
+            "note": "中值；和Dust & Scratches的效果差不多；但是只有一个参数并且速度不慢；一般用来做水彩之类效果；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Noise",
+            "note": "在画面中加入细小颗粒；\n可以做拉丝效果；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Noise Alpha",
+            "note": "对alpha加noise"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Noise HLS",
+            "note": "对色相，饱和度，亮度加noise；\n默认没有动画；需要给相位做动画才有；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Noise HLS Auto",
+            "note": "同上；这个自带动画；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Remove Grain",
+            "note": "移除噪点；降噪用；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Turbulent Noise",
+            "note": "和分形噪波几乎一样；要硬说有区别；\n这个更快；分形噪波有循环功能；这个没有；"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "data": {
+        "text": "Obsolete",
+        "expandState": "expand",
+        "note": "旧版本组；都是些Adobe认为过时的；但又不能丢掉的；"
+      },
+      "children": [
+        {
+          "data": {
+            "text": "Basic 3D",
+            "note": "基本3D"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Basic Text",
+            "note": "基本文字"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Color Key",
+            "note": "颜色键"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Lightning",
+            "note": "闪电"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Luma Key",
+            "note": "亮度键"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Path Text",
+            "note": "路径文字"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Spill Suppressor",
+            "note": "色彩抑制"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "data": {
+        "text": "Perspective",
+        "expandState": "expand",
+        "note": "透视组；"
+      },
+      "children": [
+        {
+          "data": {
+            "text": "3D Camera Tracker",
+            "note": "3D跟踪；不是特别实用；因为速度实在太慢了；功能也非常简陋；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "3D Glasses",
+            "note": "做3D效果用；不过一般没有好的监看设备；所以用不了；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Bevel Alpha",
+            "note": "倒角；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Bevel Edges",
+            "note": "边缘倒角；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Cylinder",
+            "note": "CC圆柱"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Environment",
+            "note": "CC环境；配合2:1的全景图使用；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Sphere",
+            "note": "CC球体；这组的插件都有些残疾；这个也不例外；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Spltlight",
+            "note": "CC聚光灯"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Drop Shadow",
+            "note": "投射阴影；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Radial Shadow",
+            "note": "和上一个类似；"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "data": {
+        "text": "Simulation",
+        "expandState": "expand",
+        "note": "模拟组；因为各个粒子插件的强大；这里的不太撑得住场面了；\n这些效果本身都不错；可惜多数是2D，2.5D；限制了它们的能力；"
+      },
+      "children": [
+        {
+          "data": {
+            "text": "Card Dance",
+            "note": "卡片舞蹈；算比较强的一个；毕竟支持摄像机；但是没有全局变换控制是硬伤；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Caustics",
+            "note": "焦散；\n[motionworks教程](http://motionworks.net/after-effects-a-z-caustics/)"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Ball Action",
+            "note": "这货是3D的哦；AK大神把这个用到了极限；\n[教程](http://www.videocopilot.net/tutorials/3d_ball_dispersion/)"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Bubbles",
+            "note": "泡泡；可以继承图层颜色；\n[motionworks教程](http://motionworks.net/after-effects-a-z-cc-bubbles/)"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Drizzle",
+            "note": "涟漪；可惜这些不好3d化；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Hair",
+            "note": "毛发；使用频率很低；mat有个教程用这个做毛毯出字；Ak好像有个教程拿它做草；\n[AK教程](http://www.videocopilot.net/tutorials/the_jungle/)"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Mr.Mercury",
+            "note": "水银；可以用来做一些扁平化填充效果；\nAK的教程里用这个做雨滴；\n[AK教程](http://www.videocopilot.net/tutorials/water_drops/)\n[aeTuts水写字教程](http://cgi.tutsplus.com/tutorials/create-a-beach-themed-water-writing-look--ae-6375)"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Particle Systems II",
+            "note": "CC粒子2；这个是2D的；一般要用也用下面那个；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Particle World",
+            "note": "CC粒子；算3D效果；其实还可以啦；只是参数不直观；需要特殊的算法才能对应AE的坐标；具体方法看AK的教程；\n[AK教程](http://www.videocopilot.net/tutorials/3d_stroke_effect/)"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Pixel Polly",
+            "note": "像素多边形；一种自动的破碎效果；虽然是2D；但是在AK大神手上就不同了；\n[教程](http://www.videocopilot.net/tutorials/playlist/title_design/shatterize/)"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Rainfall",
+            "note": "下雨；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Scatterize",
+            "note": "散射；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Snowfall",
+            "note": "下雪"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Star Burst",
+            "note": "星爆；可以继承图层颜色；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Foam",
+            "note": "气泡加强版；有很多自带材质；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Particle Playground",
+            "note": "粒子；速度慢；2D；基本没人用；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Shatter",
+            "note": "破碎；还算能用；毕竟现在3D软件当道；\n[AK经典文字破碎教程](http://www.videocopilot.net/tutorials/procedural_crumble/)\n[AETUT一个很抖M的破碎教程](http://cgi.tutsplus.com/tutorials/create-a-portal-below-crumbling-pavement--ae-28628)"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Wave World",
+            "note": "水波世界；一般用来给别的效果或软件做贴图较多；单独使用较少；"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "data": {
+        "text": "Stylize",
+        "expandState": "expand"
+      },
+      "children": [
+        {
+          "data": {
+            "text": "Bursh Strokes",
+            "note": "笔触；\n[motionworks教程](http://motionworks.net/after-effects-brush-strokes/)"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Cartoon",
+            "note": "卡通；\n[motionworks教程](http://motionworks.net/after-effects-cartoon/)"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Block Load",
+            "note": "类似马赛克；只是更靠近像素载入；\n很简单就能实现一个图像由厚码到薄码再到无码的效果；（泥垢）"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Burn Film",
+            "note": "胶片灼烧；这个其实更偏向过渡类；\n[motionworks教程](http://motionworks.net/after-effects-a-z-burn-film/)"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Glass",
+            "note": "CC玻璃；可以做一些斜面浮雕效果；可惜终归是2D的；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Kaleida",
+            "note": "万花筒；\n"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Mr.Smoothie",
+            "note": ""
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Plastic",
+            "note": "CC塑料；和cc玻璃是一家；光影有点不同而已；这个高光更锐利；更像PS的塑料包裹；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC RepeTile",
+            "note": "重复平铺；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Threshold",
+            "note": "阈值"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Threshold RGB",
+            "note": "彩色阈值"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Color Emboss",
+            "note": "彩色浮雕；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Emboss",
+            "note": "浮雕"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Find Edges",
+            "note": "查找边缘；很常用的一个提线条方法；一般要配合一些抠像或者叠加的方法；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Glow",
+            "note": "辉光；最看实力的一个效果；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Mosaic",
+            "note": "马赛克；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Motion Tile",
+            "note": "平铺和输出可控的平铺；\n注意比较和CC Tiler/CC RepeTile的区别"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Posterize",
+            "note": "招贴画(色调分离)；就是将图像每通道划分为几个亮度等级；\n调过以后颜色过渡变锐利；颜色数量减少；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Roughen Edges",
+            "note": "粗糙边缘；用的分形噪波的算法；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Scatter",
+            "note": "散射；在指定区域重排像素位置；类似毛玻璃效果；和CC Scatterize有所不同；散射以后不会出现孔洞；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Strobe Light",
+            "note": "闪光灯；不是很好控制；哪个方法不比这个好啊；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Texturize",
+            "note": "提取控件图像的明暗关系到自身；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Threshold",
+            "note": "阈值；"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "data": {
+        "text": "Text",
+        "expandState": "expand"
+      },
+      "children": [
+        {
+          "data": {
+            "text": "Numbers",
+            "note": "数字；可控小数位数"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Timecode",
+            "note": "时间码；一般用文字层配合时间码表达式；"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "data": {
+        "text": "Time",
+        "expandState": "expand"
+      },
+      "children": [
+        {
+          "data": {
+            "text": "CC Force Motion Blur",
+            "note": "假运动模糊；通过重复前面的帧达到运动模糊的效果；效果还可以；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Time Blend",
+            "note": "帧融合；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Time Blend FX",
+            "note": "同上；设置更灵活；有个很好的教程；讲了这个和上面，下面那两个；\n[Eran Stern教程](http://www.sternfx.com/tutorials/27)"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Wide Time",
+            "note": "混合前后帧"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Echo",
+            "note": "拖尾；大量复制会很卡；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Pixel Motion Blur",
+            "note": "类似RSMB；更真实的运动模糊；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Posterize Time",
+            "note": "算法类似Posterize；\n那个针对通道亮度；这个针对时间；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Time Difference",
+            "note": "提取运动的部分（时间阈值控制）；但并不是速度贴图；\n"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Time Displacement",
+            "note": "时间置换；很棒的效果；能化腐朽为神奇；\n[AK教程](http://www.videocopilot.net/tutorials/animated_polygon/)\n[我的教程](http://v.youku.com/v_show/id_XNjM0MDQzNTQ4.html)"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Timewarp",
+            "note": "变速；"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "data": {
+        "text": "Transition",
+        "expandState": "expand"
+      },
+      "children": [
+        {
+          "data": {
+            "text": "Block Dissolve",
+            "note": "溶解；没有随机种子是硬伤；\n[motionworks教程](http://motionworks.net/block-dissolve/)"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Card Wipe",
+            "note": "卡片擦除；类似卡片舞蹈；\n[motionworks教程](http://motionworks.net/after-effects-card-wipe/)"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Glass Wipe",
+            "note": "用CC玻璃做过渡"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Grid Wipe",
+            "note": "网格擦除"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Image Wipe",
+            "note": "利用一个通道进行过渡；比Gradint Wipe柔和些；可选通道也多；也可以做融球效果；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Jaws",
+            "note": "鲨鱼牙齿过渡；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Light Sweep",
+            "note": "光线擦除；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Line Sweep",
+            "note": "阶梯状擦除；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Radial ScaleWipe",
+            "note": "径向擦除；边缘有一些类似融化的变形；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Scale Wipe",
+            "note": "缩放擦除；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Twister",
+            "note": "一种仿3d的扭转过渡；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC WarpoMatic",
+            "note": "自动完全；带多种扭曲的叠画;比透明度叠画要高级些；但是这种特殊转场还是不能多用；\n乱七八糟转场太多会显得很业余；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Gradint Wipe",
+            "note": "利用一个黑白通道进行过渡；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Iris Wipe",
+            "note": "各种多边形划像；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Linear Wipe",
+            "note": "线性擦除；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Radial Wipe",
+            "note": "径向(时钟)擦除；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Venetial Blinds",
+            "note": "百叶窗；一般都不当过渡来用；用来做各种条纹网格元素较多；"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "data": {
+        "text": "Utility",
+        "expandState": "expand"
+      },
+      "children": [
+        {
+          "data": {
+            "text": "Apply Color LUT",
+            "note": "应用LUT文件"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "CC Overbrights",
+            "note": ""
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Cineon Converter"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Color Profile Converter"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "Glow Bounder",
+            "note": "扩展边界；修复边缘不够时很有用；"
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "HDR Compander",
+            "note": ""
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "text": "HDR Highlight Compression"
+          },
+          "children": []
+        }
+      ]
+    }
+  ]
+}
