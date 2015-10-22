@@ -1,11 +1,12 @@
 d3.select(window).on("scroll",function(){
-	console.log(d3.event);
+	var st=document.body.scrollTop+document.documentElement.scrollTop;
+	var sl=document.body.scrollLeft+document.documentElement.scrollLeft;
 	d3.select("#bb")
 		.style("left",function(){
-			return d3.event.pageX<1500 ? d3.event.pageX+"px" : "1500px";
+			return sl<1500 ? sl+"px" : "1500px";
 		})
 		.style("top",function(){
-			return d3.event.pageY<1500 ? d3.event.pageY+100+"px" : "1600px";
+			return st<1500 ? st+100+"px" : "1600px";
 	});
 	d3.event.stopPropagation();
 })
