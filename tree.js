@@ -1,10 +1,11 @@
-var w=1500;
-var note_w=parseInt(w/3);
+var w=1600;
+var oComp=document.getElementById("comp");
+var note_w=parseInt(w/5);
 note_w=note_w % 2==0 ? note_w : note_w+1;
-var padding=200;
+var padding=240;
 d3.select("#note")
-	.style({"width":note_w+"px","height":note_w+"px"})
-	.style({"left":w/2-note_w/2+"px","top":w/2-note_w/2+"px"});
+	.style({"width":note_w+"px","height":note_w+"px"});
+	// .style({"left":w/2-note_w/2+"px","top":w/2-note_w/2+"px"});
 d3.select("#comp")
 	.on("click",function(){
 		d3.selectAll(".circle")
@@ -22,7 +23,6 @@ var svg=d3.select("#comp")
 var cluster=d3.layout.cluster()
     .size([360,w/2-padding])
     .sort(null);
-var temp=[];
 var curve=d3.svg.diagonal()
 	.projection(function projection(d) {
   		var r=d.y;
@@ -38,12 +38,6 @@ d3.json("effects.json",function(data){
 		.append("path")
 		.attr("class","line")
 		.attr("d",curve);
-	svg.selectAll("circle")
-		.data(temp)
-		.enter()
-		.append("circle").attr("r",5).attr("fill","#FFF")
-		.attr("cx",function(d){return d[0]})
-		.attr("cy",function(d){return d[1]});
 	var g_nodes=svg.selectAll("g.node")
 		.data(nodes)
 		.enter()
@@ -56,9 +50,12 @@ d3.json("effects.json",function(data){
 		.attr("class","circle")
 		.attr("r",5)
 		.on("click",function(d){
+			var pos=d3.mouse(oComp);
 			d3.selectAll(".circle").style("fill","#66CCFF");
 			d3.select(this).style("fill","red");
 			d3.select("#note")
+				.style("left",function(){return (pos[0]<w/2 ? pos[0] : pos[0]-note_w)+"px"})
+				.style("top",function(){return (pos[1]<w/2 ? pos[1] : pos[1]-note_w)+"px"})
 				.style("display","block");
 			d3.select("#note_head")
 				.text(function(){return d.data.text});
