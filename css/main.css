@@ -45,7 +45,7 @@ html{
 }
 .line{
 	fill: none;
-	stroke:#666;
+	stroke:#000;
 	stroke-width: 1.5px;
 }
 .circle{
@@ -53,5 +53,5 @@ html{
 }
 .text{
 	font-size: 12px;
-	fill:#FFF;
+	fill:#000;
 }

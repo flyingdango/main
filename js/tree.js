@@ -1,11 +1,11 @@
-var w=1600;
 var oComp=document.getElementById("comp");
-var note_w=parseInt(w/5);
-note_w=note_w % 2==0 ? note_w : note_w+1;
+var w=1600;
+var nodes,links;
+var now="";
+var note_w=320;
 var padding=240;
 d3.select("#note")
 	.style({"width":note_w+"px","height":note_w+"px"});
-	// .style({"left":w/2-note_w/2+"px","top":w/2-note_w/2+"px"});
 d3.select("#comp")
 	.on("click",function(){
 		d3.selectAll(".circle")
@@ -29,24 +29,23 @@ var curve=d3.svg.diagonal()
   		var a= (d.x-90)/180*Math.PI;
   		return [r *Math.cos(a),r*Math.sin(a)];
 	});
-d3.json("./data/effects.json",function(data){
-	var nodes=cluster.nodes(data);
-	var links=cluster.links(nodes);
-	svg.selectAll("path.line")
-		.data(links)
-		.enter()
-		.append("path")
-		.attr("class","line")
-		.attr("d",curve);
-	var g_nodes=svg.selectAll("g.node")
-		.data(nodes)
-		.enter()
-		.append("g")
-		.attr("class","node")
-		.attr("transform",function(d){
-			return "rotate("+(d.x-90)+")translate("+ d.y +")";
-		});
-	g_nodes.append("circle")
+function change(name){
+	//line
+	var line=svg.selectAll("path.line").data(links);
+	line.exit().remove();
+	line.enter().append("path")
+		.attr("class","line");
+	line.transition()
+		.style("stroke","#000")
+		.transition()
+		.delay(1500)
+		.duration(1000)
+		.attr("d",curve)
+		.style("stroke","#666");
+	//c_remove+add+update
+	var circle=svg.selectAll(".circle").data(nodes);
+	circle.exit().remove();
+	circle.enter().append("circle")
 		.attr("class","circle")
 		.attr("r",5)
 		.on("click",function(d){
@@ -63,12 +62,57 @@ d3.json("./data/effects.json",function(data){
 				.text(function(){return d.data.note ? d.data.note : "暂无简介"});
 			d3.event.stopPropagation();
 		});
+	circle.transition()
+		.delay(function(d,i){return i*10+Math.random()*200})
+		.attr("transform",function(d){
+				return "rotate("+(d.x-90)+")translate("+ d.y +")";
+		});
+	//t_remove+add
+	d3.selectAll("g.node").remove();
+	var g_nodes=svg.selectAll("g.node")
+		.data(nodes)
+		.enter()
+		.append("g")
+		.attr("class","node")
+		.attr("transform",function(d){
+			return "rotate("+(d.x-90)+")translate("+ d.y +")";
+		});
 	var pth=192;
 	g_nodes.append("text")
 		.attr("class","text")
 		.attr("dx",function(d){return d.x>pth ? -6 : 6})
 		.attr("dy",4)
 		.attr("text-anchor",function(d){return d.x>pth ? "end" : "start"})
-      	.attr("transform",function(d){return d.x>pth ? "rotate(180)" : null})
-		.text(function(d){return d.data.text});
+		.attr("transform",function(d){return d.x>pth ? "rotate(180)" : null})
+		.text(function(d){return d.data.text})
+		.transition()
+		.delay(function(d,i){return i*10+Math.random()*200})
+		.style("fill","#FFF");
+}
+d3.json("./data/effects.json",function(data){
+			nodes=cluster.nodes(data);
+			links=cluster.links(nodes);
+			change("effects");
+			now="effects";
+		});
+d3.selectAll("#bb div").on("click",function(){
+	var tid=d3.select(this).attr("id");
+	if(now == "" || tid != now){
+		console.log(tid+","+now);
+		d3.json("./data/"+tid+".json",function(data){
+			if(tid=="effects"){
+				padding=240;
+			}else if(tid=="xpresso"){
+				padding=420;
+			}
+			cluster=d3.layout.cluster()
+			    .size([360,w/2-padding])
+			    .sort(null);
+			nodes=cluster.nodes(data);
+			links=cluster.links(nodes);
+			change(tid);
+			now=tid;
+		});
+	}
+	d3.event.stopPropagation();
 });
