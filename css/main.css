@@ -13,7 +13,7 @@ html{
 	top: 100px;
 	z-index: 20;
 }
-#bb div{
+#bb .but{
 	width: 160px;
 	height: 40px;
 	margin-top: 2px ;
@@ -21,8 +21,8 @@ html{
 	border: 1px #666 solid;
 }
 #bb p{
-	font-size: 18px;
-	margin-top: 6px;
+	font-size: 14px;
+	margin-top: 10px;
 	margin-left: 8px;
 	color:#FFF;
 }

@@ -12,7 +12,7 @@ d3.select(window).on("scroll",function(){
 	});
 	d3.event.stopPropagation();
 })
-d3.selectAll("#bb div")
+d3.selectAll("#bb .but")
 	.on("mouseover",function(){
 		d3.select(this)
 			.style("background-color","#444")

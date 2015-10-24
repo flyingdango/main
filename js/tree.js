@@ -38,7 +38,15 @@ function change(name){
 	line.transition()
 		.style("stroke","#000")
 		.transition()
-		.delay(1500)
+		.delay(function(){
+			if(name=="effects"){
+				return 2000;
+			}else if(name=="expression"){
+				return 1800;
+			}else if(name=="xpresso"){
+				return 1500;
+			}
+		})
 		.duration(1000)
 		.attr("d",curve)
 		.style("stroke","#666");
@@ -89,19 +97,19 @@ function change(name){
 		.delay(function(d,i){return i*10+Math.random()*200})
 		.style("fill","#FFF");
 }
-d3.json("./data/effects.json",function(data){
-			nodes=cluster.nodes(data);
-			links=cluster.links(nodes);
-			change("effects");
-			now="effects";
-		});
-d3.selectAll("#bb div").on("click",function(){
+//add botton event
+d3.selectAll("#bb .but").on("click",function(){
+	d3.selectAll("#bb .but").style("border-color","#666");
+	d3.select(this).style("border-color","#FFF");
 	var tid=d3.select(this).attr("id");
-	if(now == "" || tid != now){
-		console.log(tid+","+now);
+	var hasData=(tid=="effects" || tid=="expression" || tid=="xpresso");
+	if(hasData && tid != now){
+		//console.log(tid+","+now);
 		d3.json("./data/"+tid+".json",function(data){
 			if(tid=="effects"){
 				padding=240;
+			}else if(tid=="expression"){
+				padding=320;
 			}else if(tid=="xpresso"){
 				padding=420;
 			}
@@ -116,3 +124,4 @@ d3.selectAll("#bb div").on("click",function(){
 	}
 	d3.event.stopPropagation();
 });
+document.getElementById("effects").click();
