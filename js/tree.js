@@ -21,8 +21,12 @@ d3.select("#comp")
 var svg=d3.select("#comp")
 	.style({"width":w+'px',"heihgt":w+'px'})
 	.append("svg")
-	.attr({width:w,height:w})
-	.append("g")
+	.attr({width:w,height:w});
+	//下层 放线
+var g2=svg.append("g")
+	.attr("transform","translate("+w/2+","+w/2+")");
+	//上层 放圆+字
+var g1=svg.append("g")
 	.attr("transform","translate("+w/2+","+w/2+")");
 var color=d3.scale.category20();
 var cluster=d3.layout.cluster()
@@ -36,7 +40,7 @@ var curve=d3.svg.diagonal()
 	});
 function change(name){
 	//line
-	var line=svg.selectAll("path.line").data(links);
+	var line=g2.selectAll("path.line").data(links);
 	line.exit().remove();
 	line.enter().append("path")
 		.attr("class","line");
@@ -56,7 +60,7 @@ function change(name){
 		.attr("d",curve)
 		.style("stroke","#666");
 	//c_remove+add+update
-	var circle=svg.selectAll(".circle").data(nodes);
+	var circle=g1.selectAll(".circle").data(nodes);
 	var ng=15;
 	circle.exit().remove();
 	circle.enter().append("circle")
@@ -86,7 +90,7 @@ function change(name){
 		});
 	//t_remove+add
 	d3.selectAll("g.node").remove();
-	var g_nodes=svg.selectAll("g.node")
+	var g_nodes=g1.selectAll("g.node")
 		.data(nodes)
 		.enter()
 		.append("g")
