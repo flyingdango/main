@@ -4,6 +4,12 @@ html{
 	background-color: #000;
 	font-family: "微软雅黑",serif;
 }
+#help{
+	color:#666;
+	position: absolute;
+	left: 50px;
+	top: 50px;
+}
 #bb{
 	width: 200px;
 /*	height: 1000px;*/
@@ -49,7 +55,9 @@ html{
 	stroke-width: 1.5px;
 }
 .circle{
-	fill:#66CCFF;
+	fill:#000;
+	stroke:none;
+	stroke-width: 2px;
 }
 .text{
 	font-size: 12px;

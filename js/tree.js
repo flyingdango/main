@@ -5,11 +5,15 @@ var now="";
 var note_w=320;
 var padding=240;
 d3.select("#note")
-	.style({"width":note_w+"px","height":note_w+"px"});
+	.style({"width":note_w+"px","height":note_w+"px"})
+	.on("click",function(){
+		d3.event.stopPropagation();
+	});
 d3.select("#comp")
+	.style({"width":w+"px","height":w+"px"})
 	.on("click",function(){
 		d3.selectAll(".circle")
-			.style("fill","#66CCFF");
+			.style("stroke","none");
 		d3.select("#note")
 			.style("display","none");
 		d3.event.stopPropagation();
@@ -20,6 +24,7 @@ var svg=d3.select("#comp")
 	.attr({width:w,height:w})
 	.append("g")
 	.attr("transform","translate("+w/2+","+w/2+")");
+var color=d3.scale.category20();
 var cluster=d3.layout.cluster()
     .size([360,w/2-padding])
     .sort(null);
@@ -52,26 +57,30 @@ function change(name){
 		.style("stroke","#666");
 	//c_remove+add+update
 	var circle=svg.selectAll(".circle").data(nodes);
+	var ng=15;
 	circle.exit().remove();
 	circle.enter().append("circle")
 		.attr("class","circle")
 		.attr("r",5)
 		.on("click",function(d){
 			var pos=d3.mouse(oComp);
-			d3.selectAll(".circle").style("fill","#66CCFF");
-			d3.select(this).style("fill","red");
+			d3.selectAll(".circle").style("stroke","none");
+			d3.select(this).style("stroke","#FFF");
 			d3.select("#note")
-				.style("left",function(){return (pos[0]<w/2 ? pos[0] : pos[0]-note_w)+"px"})
-				.style("top",function(){return (pos[1]<w/2 ? pos[1] : pos[1]-note_w)+"px"})
+				.style("left",function(){return (pos[0]<w/2 ? pos[0]+ng : pos[0]-note_w-ng)+"px"})
+				.style("top",function(){return (pos[1]<w/2 ? pos[1]+ng : pos[1]-note_w-ng)+"px"})
 				.style("display","block");
 			d3.select("#note_head")
 				.text(function(){return d.data.text});
 			d3.select("#note_text")
-				.text(function(){return d.data.note ? d.data.note : "暂无简介"});
+				.html(function(){return d.data.note ? d.data.note : "暂无简介"});
 			d3.event.stopPropagation();
 		});
 	circle.transition()
 		.delay(function(d,i){return i*10+Math.random()*200})
+		.style("fill",function(d){
+			return d.data.resource ? color(parseInt(d.data.resource[0])) : "#66CCFF";
+		})
 		.attr("transform",function(d){
 				return "rotate("+(d.x-90)+")translate("+ d.y +")";
 		});
@@ -99,6 +108,8 @@ function change(name){
 }
 //add botton event
 d3.selectAll("#bb .but").on("click",function(){
+	d3.selectAll(".circle").style("stroke","none");
+	d3.select("#note").style("display","none");
 	d3.selectAll("#bb .but").style("border-color","#666");
 	d3.select(this).style("border-color","#FFF");
 	var tid=d3.select(this).attr("id");
