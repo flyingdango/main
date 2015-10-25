@@ -8,7 +8,7 @@ d3.select(window).on("scroll",function(){
 			return sl<1500 ? parseInt(sl)+"px" : "1500px";
 		})
 		.style("top",function(){
-			return st<1500 ? parseInt(st)+100+"px" : "1600px";
+			return st<1500 ? parseInt(st)+150+"px" : "1650px";
 	});
 	d3.event.stopPropagation();
 })
