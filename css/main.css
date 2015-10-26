@@ -4,6 +4,26 @@ html{
 	background-color: #000;
 	font-family: "微软雅黑",serif;
 }
+#loading{
+	width: 1600px;
+	height: 1600px;
+	margin: 0 auto;
+}
+#loading p{
+	font-size: 30px;
+	color: #AAA;
+	position: absolute;
+	top: 0px;
+	padding-left: 750px;
+	padding-top: 400px;
+}
+#comp{
+	display: none;
+	margin: 0 auto;
+	clear: both;
+	background-color: #000;
+	position: relative;
+}
 #help{
 	color:#666;
 	position: absolute;
@@ -11,12 +31,12 @@ html{
 	top: 5px;
 }
 #bb{
+	display: none;
 	width: 200px;
-/*	height: 1000px;*/
 	clear: both;
-	position: absolute;
+	position: fixed;
 	left: 0px;
-	top: 100px;
+	top: 200px;
 	z-index: 20;
 }
 #bb .but{
@@ -31,11 +51,6 @@ html{
 	margin-top: 10px;
 	margin-left: 8px;
 	color:#FFF;
-}
-#comp{
-	margin: 0 auto;
-	background-color: #000;
-	position: relative;
 }
 #note{
 	width: 400px;

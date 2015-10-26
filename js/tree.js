@@ -1,9 +1,12 @@
-var oComp=document.getElementById("comp");
-var w=1600;
+var node_l=[],link_l=[];
+var dnl=["effects","expression","xpresso"];
+var padl=[240,320,420];
 var nodes,links;
+var w=1600;
+var oComp=document.getElementById("comp");
 var now="";
 var note_w=320;
-var padding=240;
+
 d3.select("#note")
 	.style({"width":note_w+"px","height":note_w+"px"})
 	.on("click",function(){
@@ -29,9 +32,6 @@ var g2=svg.append("g")
 var g1=svg.append("g")
 	.attr("transform","translate("+w/2+","+w/2+")");
 var color=d3.scale.category20();
-var cluster=d3.layout.cluster()
-    .size([360,w/2-padding])
-    .sort(null);
 var curve=d3.svg.diagonal()
 	.projection(function projection(d) {
   		var r=d.y;
@@ -48,13 +48,7 @@ function change(name){
 		.style("stroke","#000")
 		.transition()
 		.delay(function(){
-			if(name=="effects"){
-				return 2000;
-			}else if(name=="expression"){
-				return 1800;
-			}else if(name=="xpresso"){
-				return 1500;
-			}
+			return nodes.length*10;
 		})
 		.duration(1000)
 		.attr("d",curve)
@@ -111,32 +105,45 @@ function change(name){
 		.style("fill","#FFF");
 }
 //add botton event
-d3.selectAll("#bb .but").on("click",function(){
-	d3.selectAll(".circle").style("stroke","none");
-	d3.select("#note").style("display","none");
-	d3.selectAll("#bb .but").style("border-color","#666");
-	d3.select(this).style("border-color","#FFF");
-	var tid=d3.select(this).attr("id");
-	var hasData=(tid=="effects" || tid=="expression" || tid=="xpresso");
-	if(hasData && tid != now){
-		//console.log(tid+","+now);
-		d3.json("./data/"+tid+".json",function(data){
-			if(tid=="effects"){
-				padding=240;
-			}else if(tid=="expression"){
-				padding=320;
-			}else if(tid=="xpresso"){
-				padding=420;
+function load(index){
+	var cluster=d3.layout.cluster()
+	    	.size([360,w/2-padl[index]])
+	    	.sort(null);
+	d3.json("./data/"+dnl[index]+".json",function(data){
+		var tnodes=cluster.nodes(data);
+		node_l.push(tnodes);
+		link_l.push(cluster.links(tnodes));
+	});
+}
+for(var n=0;n<dnl.length;n++){
+	load(n);
+}
+d3.timer(function(){
+	if(node_l.length==dnl.length){
+		d3.selectAll("#comp,#bb").style("display","block");
+		d3.selectAll("#loading").style("display","none");
+		d3.selectAll("#bb .but").on("click",function(){
+			d3.selectAll(".circle").style("stroke","none");
+			d3.select("#note").style("display","none");
+			d3.selectAll("#bb .but").style("border-color","#666");
+			d3.select(this).style("border-color","#FFF");
+			var tid=d3.select(this).attr("id");
+			if(tid != now){
+				var nid=0;
+				for(var n=0;n<dnl.length;n++){
+					if(tid==dnl[n]){
+						nid=n;
+						break;
+					}
+				}
+				nodes=node_l[nid];
+				links=link_l[nid];
+				change(tid);
+				now=tid;
 			}
-			cluster=d3.layout.cluster()
-			    .size([360,w/2-padding])
-			    .sort(null);
-			nodes=cluster.nodes(data);
-			links=cluster.links(nodes);
-			change(tid);
-			now=tid;
+			d3.event.stopPropagation();
 		});
+		document.getElementById("effects").click();
+		return true;
 	}
-	d3.event.stopPropagation();
-});
-document.getElementById("effects").click();
+},1000);
