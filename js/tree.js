@@ -1,4 +1,4 @@
-var node_l=[],link_l=[];
+var dt={};
 var dnl=["effects","expression","xpresso"];
 var padl=[240,320,420];
 var nodes,links;
@@ -106,20 +106,23 @@ function change(name){
 }
 //add botton event
 function load(index){
+	dt[dnl[index]]={};
 	var cluster=d3.layout.cluster()
 	    	.size([360,w/2-padl[index]])
 	    	.sort(null);
 	d3.json("./data/"+dnl[index]+".json",function(data){
 		var tnodes=cluster.nodes(data);
-		node_l.push(tnodes);
-		link_l.push(cluster.links(tnodes));
+		dt[dnl[index]].nodes=(tnodes);
+		dt[dnl[index]].links=(cluster.links(tnodes));
 	});
 }
 for(var n=0;n<dnl.length;n++){
 	load(n);
 }
+
 d3.timer(function(){
-	if(node_l.length==dnl.length){
+	//console.log(dt[dnl[dnl.length-1]]);
+	if(dt[dnl[dnl.length-1]]){
 		d3.selectAll("#comp,#bb").style("display","block");
 		d3.selectAll("#loading").style("display","none");
 		d3.selectAll("#bb .but").on("click",function(){
@@ -129,15 +132,8 @@ d3.timer(function(){
 			d3.select(this).style("border-color","#FFF");
 			var tid=d3.select(this).attr("id");
 			if(tid != now){
-				var nid=0;
-				for(var n=0;n<dnl.length;n++){
-					if(tid==dnl[n]){
-						nid=n;
-						break;
-					}
-				}
-				nodes=node_l[nid];
-				links=link_l[nid];
+				nodes=dt[tid].nodes;
+				links=dt[tid].links;
 				change(tid);
 				now=tid;
 			}

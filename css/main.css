@@ -4,6 +4,9 @@ html{
 	background-color: #000;
 	font-family: "微软雅黑",serif;
 }
+#help a{
+	color: #AAA;
+}
 #loading{
 	width: 1600px;
 	height: 1600px;
