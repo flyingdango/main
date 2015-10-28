@@ -122,7 +122,8 @@ for(var n=0;n<dnl.length;n++){
 
 d3.timer(function(){
 	//console.log(dt[dnl[dnl.length-1]]);
-	if(dt[dnl[dnl.length-1]]){
+	if(dt[dnl[dnl.length-1]] && dt[dnl[0]]){
+		if(dt[dnl[0]].nodes.length<270){return false}
 		d3.selectAll("#comp,#bb").style("display","block");
 		d3.selectAll("#loading").style("display","none");
 		d3.selectAll("#bb .but").on("click",function(){
@@ -139,7 +140,10 @@ d3.timer(function(){
 			}
 			d3.event.stopPropagation();
 		});
-		document.getElementById("effects").click();
+		var t=setTimeout(function(){
+			document.getElementById("effects").click();
+			clearTimeout(t);
+		},500);
 		return true;
 	}
 },1000);

@@ -2,24 +2,25 @@
 /* CSS Document */
 html{
 	background-color: #000;
-	font-family: "微软雅黑",serif;
+	font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";
 }
-#help a{
-	color: #AAA;
-}
+
+/*loading*/
 #loading{
 	width: 1600px;
 	height: 1600px;
-	margin: 0 auto;
+	position: absolute;
 }
 #loading p{
 	font-size: 30px;
 	color: #AAA;
 	position: absolute;
-	top: 0px;
-	padding-left: 750px;
-	padding-top: 400px;
+	top: 0;
+	padding-left: 500px;
+	padding-top: 200px;
 }
+
+/*comp*/
 #comp{
 	display: none;
 	margin: 0 auto;
@@ -31,8 +32,13 @@ html{
 	color:#666;
 	position: absolute;
 	left: 50px;
-	top: 5px;
+	top: 20px;
 }
+#help a{
+	color: #AAA;
+}
+
+/*bottonbox*/
 #bb{
 	display: none;
 	width: 200px;
@@ -49,16 +55,19 @@ html{
 	background-color: #222;
 	border: 1px #666 solid;
 }
+#bb .but:hover{
+	background-color: #444;
+}
 #bb p{
 	font-size: 14px;
 	margin-top: 10px;
 	margin-left: 8px;
 	color:#FFF;
 }
+
+/*note*/
 #note{
-	width: 400px;
-	height: 400px;
-	font-size: 18px;
+	font-size: 16px;
 	position: absolute;
 	background-color: rgba(240,240,230,.85);
 	display: none;
@@ -67,6 +76,8 @@ html{
 #note>*{
 	padding: 10px;
 }
+
+/*svg*/
 .line{
 	fill: none;
 	stroke:#000;
@@ -81,3 +92,5 @@ html{
 	font-size: 12px;
 	fill:#000;
 }
+
+/*===*/
