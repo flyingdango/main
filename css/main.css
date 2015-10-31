@@ -63,6 +63,7 @@ html{
 	margin-top: 10px;
 	margin-left: 8px;
 	color:#FFF;
+	pointer-events: none;
 }
 
 /*note*/
@@ -87,10 +88,12 @@ html{
 	fill:#000;
 	stroke:none;
 	stroke-width: 2px;
+	cursor: pointer;
 }
 .text{
 	font-size: 12px;
 	fill:#000;
+	pointer-events: none;
 }
 
 /*===*/

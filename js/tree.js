@@ -1,6 +1,6 @@
 var dt={};
 var dnl=["effects","expression","xpresso"];
-var padl=[240,320,420];
+var padl=[240,320,420,150];
 var nodes,links;
 var w=1600;
 var oComp=document.getElementById("comp");
@@ -121,8 +121,9 @@ for(var n=0;n<dnl.length;n++){
 }
 
 d3.timer(function(){
-	//console.log(dt[dnl[dnl.length-1]]);
+	//console.log(dt[dnl[0]]);
 	if(dt[dnl[dnl.length-1]] && dt[dnl[0]]){
+		if(! dt[dnl[0]].nodes){return false}
 		if(dt[dnl[0]].nodes.length<270){return false}
 		d3.selectAll("#comp,#bb").style("display","block");
 		d3.selectAll("#loading").style("display","none");
@@ -146,4 +147,4 @@ d3.timer(function(){
 		},500);
 		return true;
 	}
-},1000);
+},500);
