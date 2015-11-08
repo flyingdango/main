@@ -1,0 +1,2107 @@
+{
+  "data": {
+    "id": "f8f173db8e4c",
+    "created": 1446943221,
+    "text": "Snap",
+    "note": "<a href='http://snapsvg.io/docs/' target='_blank'>官方文档</a>"
+  },
+  "children": [
+    {
+      "data": {
+        "id": "azr6iid2580s",
+        "created": 1446943079841,
+        "text": "Snap",
+        "resource": [
+          "1"
+        ],
+        "expandState": "expand"
+      },
+      "children": [
+        {
+          "data": {
+            "id": "azr6lij42q04",
+            "created": 1446943315299,
+            "text": "Snap()",
+            "note": "4种用法<br />1.传宽高；返回新svg的el<br />2.传DOM；返回指定svg的el或<br />在指定元素里放入新的svg的el<br />3.array<br />4.query选择器",
+            "resource": [
+              "1"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azr6llxxep4o",
+            "created": 1446943322725,
+            "text": "format()",
+            "note": "（token，json）<br />根据一个json返回字符串<br />token是规则<br /><a href='http://snapsvg.io/docs/#Snap.format' target='_blank'>官方示例</a>",
+            "resource": [
+              "1"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azr6zxoiqgw0",
+            "created": 1446944445376,
+            "text": "rad()",
+            "note": "角度转弧度",
+            "resource": [
+              "1"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azr708wa4288",
+            "created": 1446944469790,
+            "text": "deg()",
+            "note": "弧度转角度",
+            "resource": [
+              "1"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azr70o0hyvsc",
+            "created": 1446944502697,
+            "text": "angle()",
+            "note": "(x1,y1,x2,y2,x3,y3)<br />根据两点或3点计算角度<br />两点是atan2<br />3点是矢量夹角",
+            "resource": [
+              "1"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azr74ev1v1ck",
+            "created": 1446944796233,
+            "text": "is()",
+            "note": "(o,type)<br />判断o是否为指定类型<br />type字符串:<br />'null','array','object'等",
+            "resource": [
+              "1"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azr7e7teiy8s",
+            "created": 1446945564537,
+            "text": "snapTo()",
+            "resource": [
+              "1"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azr7qtkoi4o4",
+            "created": 1446946552269,
+            "text": "getRGB()",
+            "note": "把其他格式的颜色变成snap的rgb对象<br />rgb对象可访问：<br />r,g,b,hex",
+            "resource": [
+              "1"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azr7rrk90zk0",
+            "created": 1446946626254,
+            "text": "hsb()",
+            "note": "（h，s，b）<br />转hex字符",
+            "resource": [
+              "1"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azr7rtip1qg4",
+            "created": 1446946630513,
+            "text": "hsl()",
+            "note": "（h，s，l）<br />转hex字符",
+            "resource": [
+              "1"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azr7rv1n5zc4",
+            "created": 1446946633836,
+            "text": "rgb()",
+            "note": "(r,g,b)<br />转hex字符",
+            "resource": [
+              "1"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azr7t67p4wg8",
+            "created": 1446946736511,
+            "text": "color()",
+            "note": "将颜色转换为snap的color对象<br />color对象可访问：<br />r,g,b,hex,h,s,v,l",
+            "resource": [
+              "1"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azr7v0ay6coo",
+            "created": 1446946880375,
+            "text": "hsb2rgb()",
+            "note": "(h,s,v)",
+            "resource": [
+              "1"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azr7vgdrbu0o",
+            "created": 1446946915373,
+            "text": "hsl2rgb()",
+            "note": "(h,s,l)",
+            "resource": [
+              "1"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azr8flsbcmww",
+            "created": 1446948494421,
+            "text": "rgb2hsb()",
+            "note": "rgb转hsb对象",
+            "resource": [
+              "1"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azr8fodqf54o",
+            "created": 1446948500069,
+            "text": "rgb2hsl()",
+            "note": "rgb转hsl对象",
+            "resource": [
+              "1"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azr8gobvnugw",
+            "created": 1446948578321,
+            "text": "parsePathString()",
+            "note": "可以处理path的d数据<br />转为数组",
+            "resource": [
+              "1"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azr8gsgbyog8",
+            "created": 1446948587298,
+            "text": "parseTransformString()",
+            "note": "可以处理svg的transform数据<br />转为数组",
+            "resource": [
+              "1"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azr8n37f9qg4",
+            "created": 1446949080889,
+            "text": "select()",
+            "note": "同d3.slect<br />将dom转snap对象",
+            "resource": [
+              "1"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azr8nx0thu88",
+            "created": 1446949145793,
+            "text": "selectAll()",
+            "note": "同d3.selectAll",
+            "expandState": "expand",
+            "resource": [
+              "1"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrcf6aywmww",
+            "created": 1446959745160,
+            "text": "animate()",
+            "note": "(sv,ev,set,dur,ease,cb)<br />全局时间线；类似d3.transition<br />关键是set函数；会被传入当前结果<br />然后在set函数内部设置属性<br />具体看官方示例<br /><a href='http://snapsvg.io/docs/#Snap.animate' target='_blank'>官方示例</a>",
+            "resource": [
+              "1"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrddz0lm9s0",
+            "created": 1446962472041,
+            "text": "parse()",
+            "note": "(svg)<br />转svg片段为snap碎片对象",
+            "resource": [
+              "1"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrdp50g4i88",
+            "created": 1446963347098,
+            "text": "fragment()",
+            "note": "类似parse()<br />用dom片段创建碎片",
+            "resource": [
+              "1"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrdpyrplbco",
+            "created": 1446963411873,
+            "text": "ajax()",
+            "note": "简易封装的ajax<br />(url,postData,cb,scope)<br />(url,cb,scope)",
+            "resource": [
+              "1"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrdv46e0wg8",
+            "created": 1446963815466,
+            "text": "load()",
+            "note": "(url,cb)<br />高级ajax;载入svg为cb的参数",
+            "resource": [
+              "1"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrdwgy3lpcg",
+            "created": 1446963921627,
+            "text": "getElementByPoint()",
+            "note": "(x,y)<br />获取指定位置最上面的元素；<br />坐标相对window；",
+            "resource": [
+              "1"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrdzufysiog",
+            "created": 1446964186098,
+            "text": "plugin()",
+            "note": "写snap插件用<br /><a href='http://snapsvg.io/docs/#Snap.plugin' target='_blank'>官方示例</a>",
+            "resource": [
+              "1"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrec76jrwg0",
+            "created": 1446965154197,
+            "text": "Matrix()",
+            "note": "2种用法<br />扩展matrix方法用<br />新建一个矩阵；需要传a-f",
+            "resource": [
+              "1"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azril0qr0aw4",
+            "created": 1446977129898,
+            "text": "filter",
+            "expandState": "collapse",
+            "resource": [
+              "2"
+            ]
+          },
+          "children": [
+            {
+              "data": {
+                "id": "azril9iss5s8",
+                "created": 1446977149008,
+                "text": "blur()",
+                "resource": [
+                  "2"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrilbj16pcs",
+                "created": 1446977153376,
+                "text": "shadow()",
+                "resource": [
+                  "2"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrilpwu29kw",
+                "created": 1446977184685,
+                "text": "grayscale()",
+                "resource": [
+                  "2"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrizr7l7iwc",
+                "created": 1446978284611,
+                "text": "sepia()",
+                "resource": [
+                  "2"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrj001guego",
+                "created": 1446978303831,
+                "text": "saturate()",
+                "resource": [
+                  "2"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrj0f5vjugw",
+                "created": 1446978336750,
+                "text": "hueRotate()",
+                "resource": [
+                  "2"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrj0lu30ao0",
+                "created": 1446978351274,
+                "text": "invert()",
+                "resource": [
+                  "2"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrj0qfyru8s",
+                "created": 1446978361304,
+                "text": "brightness()",
+                "resource": [
+                  "2"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrj0wg65ds0",
+                "created": 1446978374377,
+                "text": "contrast()",
+                "resource": [
+                  "2"
+                ]
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "data": {
+            "id": "azrj9qbzmo84",
+            "created": 1446979066341,
+            "text": "path",
+            "expandState": "collapse",
+            "resource": [
+              "3"
+            ]
+          },
+          "children": [
+            {
+              "data": {
+                "id": "azrj9sl0ab4s",
+                "created": 1446979071240,
+                "text": "getTotalLength()",
+                "note": "(pathSt)",
+                "resource": [
+                  "3"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrja38djx4c",
+                "created": 1446979094421,
+                "text": "getPointAtLength()",
+                "note": "(pathStr,length)",
+                "resource": [
+                  "3"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrjabqmwb48",
+                "created": 1446979112939,
+                "text": "getSubpath()",
+                "note": "(pathStr,from,to)",
+                "resource": [
+                  "3"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrk2s9zmu8k",
+                "created": 1446981343135,
+                "text": "findDotsAtSegment()",
+                "note": "(p1x,p1y,c1x,c1y,c2x,<br />c2y,p2x,p2y,t)",
+                "resource": [
+                  "3"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrk9hta0i04",
+                "created": 1446981868906,
+                "text": "bezierBBox()",
+                "note": "（p1x,p1y,c1x,c1y,c2x,<br />c2y,p2x,p2y）<br />获取一段贝塞尔的bb",
+                "resource": [
+                  "3"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrka339xao8",
+                "created": 1446981915223,
+                "text": "isPointInsideBBox()",
+                "note": "（bb,x,y）<br />点是否在bb内",
+                "resource": [
+                  "3"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrkaksr8qo0",
+                "created": 1446981953769,
+                "text": "isBBoxIntersect()",
+                "note": "(b1,b2)<br />两个bb是否相交",
+                "resource": [
+                  "3"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrkclhapewo",
+                "created": 1446982111981,
+                "text": "intersection()",
+                "note": "(pStr1,pStr2)<br />求两条path交点",
+                "resource": [
+                  "3"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrkea9uytk4",
+                "created": 1446982244315,
+                "text": "isPointInside()",
+                "note": "(path,x,y)<br />判断点是否在指定path内",
+                "resource": [
+                  "3"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrkfgereyo0",
+                "created": 1446982336036,
+                "text": "getBBox()",
+                "note": "(pStr)<br />获取path的bb",
+                "resource": [
+                  "3"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrkg28p31ss",
+                "created": 1446982383559,
+                "text": "toRelative()",
+                "note": "(pStr)<br />将path转为全小写相对模式",
+                "resource": [
+                  "3"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrkgntj3q8k",
+                "created": 1446982430531,
+                "text": "toAbsolute()",
+                "note": "（pStr）<br />转为全大写的绝对模式",
+                "resource": [
+                  "3"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrkhkxfq7sw",
+                "created": 1446982502601,
+                "text": "toCubic()",
+                "note": "(pStr)<br />转为全C格式",
+                "resource": [
+                  "3"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrki815cv4g",
+                "created": 1446982552891,
+                "text": "map()",
+                "note": "（path，m）<br />对path施加矩阵变换",
+                "resource": [
+                  "3"
+                ]
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "data": {
+        "id": "azr6ij4oyy8s",
+        "created": 1446943081511,
+        "text": "Element",
+        "expandState": "expand",
+        "resource": [
+          "4"
+        ]
+      },
+      "children": [
+        {
+          "data": {
+            "id": "azr8qi3wq8wk",
+            "created": 1446949348420,
+            "text": "node",
+            "note": "返回snap对象对应的dom<br />然后就可以快乐地绑定事件了",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrbfdk0u8g8",
+            "created": 1446956939835,
+            "text": "type",
+            "note": "返回el的dom标签名",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrbffflzaww",
+            "created": 1446956943922,
+            "text": "attr()",
+            "note": "读/写属性",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrbm5ui3jco",
+            "created": 1446957471603,
+            "text": "getBBox()",
+            "note": "得到bbox对象；非常强大<br />bbox可以访问：<br />w,h,width,height<br />r0,r1,r2<br />vb,path<br />x,y,x2,y2",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrbnr49rr40",
+            "created": 1446957596271,
+            "text": "transform()",
+            "note": "设置/获取transform<br />获取的是一个对象；可以访问<br />string<br />globalMatrix<br />localMatrix<br />diffMatrix<br />global<br />local<br />toString",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrbpttkuqog",
+            "created": 1446957758883,
+            "text": "praent()",
+            "note": "父级的snap对象",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrbqixsnt44",
+            "created": 1446957813557,
+            "text": "append()",
+            "note": "（el）<br />将el放入sel里面的最后",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azr6oijuix44",
+            "created": 1446943550436,
+            "text": "add()",
+            "note": "同append",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrbrpxgeggs",
+            "created": 1446957907138,
+            "text": "appendTo()",
+            "note": "(el)<br />将sel放到el的里面的最后",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrbstvmd4w0",
+            "created": 1446957994099,
+            "text": "prepend()",
+            "note": "(el)<br />将el放到sel里面的最前",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrbt8ln97kg",
+            "created": 1446958026147,
+            "text": "propendTo()",
+            "note": "(el)<br />将sel放到el里面的最前",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrbukiycl4w",
+            "created": 1446958130470,
+            "text": "before()",
+            "note": "(el)<br />将el放到sel之前",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azr6oz06mu8g",
+            "created": 1446943586252,
+            "text": "after()",
+            "note": "(el)<br />将el放到sel之后",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrbx5pd9p4c",
+            "created": 1446958333299,
+            "text": "insertBefore()",
+            "note": "(el)<br />将sel放到el之前",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrbxbxtz3sw",
+            "created": 1446958346871,
+            "text": "insertAfter()",
+            "note": "（el）<br />将sel放到el之前；",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrbzksqqp4o",
+            "created": 1446958522883,
+            "text": "remove()",
+            "note": "将el从dom中移除",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrc0z7vh1k4",
+            "created": 1446958632637,
+            "text": "select()",
+            "note": "子选集",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrc11rz99ck",
+            "created": 1446958638206,
+            "text": "selectAll()",
+            "note": "子选集",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrc1dbvqqog",
+            "created": 1446958663354,
+            "text": "asPX()",
+            "note": "获取/设置sel的属性<br />和attr不同；这个是带px的",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrc2trm3tsk",
+            "created": 1446958777498,
+            "text": "use()",
+            "note": "新建一个use标签的snap对象",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrc3zfp6xkc",
+            "created": 1446958868202,
+            "text": "clone()",
+            "note": "复制一个并放在sel之后<br />返回克隆的对象",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrc4pfm4b48",
+            "created": 1446958924794,
+            "text": "toDefs()",
+            "note": "将sel移动到一个公用defs里<br />defs里一般是滤镜；蒙版；元件之类；",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrc6q9zny80",
+            "created": 1446959083359,
+            "text": "toPattern()",
+            "note": "转换为填充图案<br />具体看官方示例<br /><a<br />href='http://snapsvg.io/docs/#Element.toPattern' target='_blank'>官方示例</a>",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrca3wn6og8",
+            "created": 1446959348119,
+            "text": "marker()",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrcccik0goc",
+            "created": 1446959523587,
+            "text": "animation()",
+            "note": "创建一个动画对象<br />(attr,dur,ease,cb)<br />attr可以是数组<br />dur持续<br />ease要是mina对象的一种<br />cb结束后的回调函数",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrcezx32g0k",
+            "created": 1446959731260,
+            "text": "inAnim()",
+            "note": "访问动画中的对象；<br />返回的数据可访问：<br />anim对应的动画对象<br />mina使用的mina对象<br />curStatus返回0-1<br />status<br />stop停止",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrcoqiy82gc",
+            "created": 1446960494455,
+            "text": "stop()",
+            "note": "停止sel所有动画",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrcp1flyd4w",
+            "created": 1446960518198,
+            "text": "animate()",
+            "note": "类似animation()<br />不同的是这个不返回动画对象<br />可以接着连缀",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrcr9hvqi8s",
+            "created": 1446960692478,
+            "text": "data()",
+            "note": "(key[,value])<br />获取/设置节点的data",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrcx4xm6nks",
+            "created": 1446961152731,
+            "text": "removeData()",
+            "note": "移除指定data；<br />未指定移除所有data；",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrdct1iars4",
+            "created": 1446962380671,
+            "text": "outerSVG()",
+            "note": "=outerHTML<br />导出时会有用",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrddjblb3ks",
+            "created": 1446962437877,
+            "text": "toString()",
+            "note": "同outerSVG",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrdfnkp83k0",
+            "created": 1446962603863,
+            "text": "innerSVG()",
+            "note": "=innerHTML",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azridbj62qwo",
+            "created": 1446976526471,
+            "text": "addClass()",
+            "note": "附加类",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azridfxlo1kw",
+            "created": 1446976536050,
+            "text": "removeClass()",
+            "note": "移除类",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azridivdpgws",
+            "created": 1446976542446,
+            "text": "hasClass()",
+            "note": "判断有无指定类",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azridngr1340",
+            "created": 1446976552446,
+            "text": "toggleClass()",
+            "note": "（name，flag）<br />切换类；通过flag的T/F",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrj9sl0ab4s",
+            "created": 1446979071240,
+            "text": "getTotalLength()",
+            "note": "(pathStr)",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrja38djx4c",
+            "created": 1446979094421,
+            "text": "getPointAtLength()",
+            "note": "(length)",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrjabqmwb48",
+            "created": 1446979112939,
+            "text": "getSubpath()",
+            "note": "(from,to)",
+            "resource": [
+              "4"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrj22g6ylko",
+            "created": 1446978465804,
+            "text": "event",
+            "expandState": "collapse",
+            "resource": [
+              "7"
+            ]
+          },
+          "children": [
+            {
+              "data": {
+                "id": "azrj25024mgo",
+                "created": 1446978471358,
+                "text": "click()",
+                "resource": [
+                  "7"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrj2900gs8w",
+                "created": 1446978480063,
+                "text": "unclick()",
+                "resource": [
+                  "7"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrj2cnuzugw",
+                "created": 1446978488035,
+                "text": "dblclick()",
+                "resource": [
+                  "7"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrj2i2nag0g",
+                "created": 1446978499813,
+                "text": "undblclick()",
+                "resource": [
+                  "7"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrj2ncix28g",
+                "created": 1446978511294,
+                "text": "mousedown()",
+                "resource": [
+                  "7"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrj2rrpigw0",
+                "created": 1446978520920,
+                "text": "unmousedown()",
+                "resource": [
+                  "7"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrj2xyb9xk4",
+                "created": 1446978534380,
+                "text": "mousemove()",
+                "resource": [
+                  "7"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrj3bvcxkgs",
+                "created": 1446978564676,
+                "text": "unmousemove()",
+                "resource": [
+                  "7"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrj3ezbxkw0",
+                "created": 1446978571446,
+                "text": "mouseout()",
+                "resource": [
+                  "7"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrj3jg24sg0",
+                "created": 1446978581165,
+                "text": "unmouseout()",
+                "resource": [
+                  "7"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrj3nuutjc4",
+                "created": 1446978590767,
+                "text": "mouseover()",
+                "resource": [
+                  "7"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrj3sgqw80k",
+                "created": 1446978600798,
+                "text": "unmouseover()",
+                "resource": [
+                  "7"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrj3vx3kfks",
+                "created": 1446978608317,
+                "text": "mouseup()",
+                "resource": [
+                  "7"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrj42s0gbso",
+                "created": 1446978623247,
+                "text": "unmouseup()",
+                "resource": [
+                  "7"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrj454vvt44",
+                "created": 1446978628379,
+                "text": "touchstart()",
+                "resource": [
+                  "7"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrj4bs1jrsc",
+                "created": 1446978642840,
+                "text": "untouchstart()",
+                "resource": [
+                  "7"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrj4m0ayxsk",
+                "created": 1446978665107,
+                "text": "touchmove()",
+                "resource": [
+                  "7"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrj4opavmok",
+                "created": 1446978670972,
+                "text": "untouchmove()",
+                "resource": [
+                  "7"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrj4r3hdvs4",
+                "created": 1446978676183,
+                "text": "touchend()",
+                "resource": [
+                  "7"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrj4woyshs0",
+                "created": 1446978688366,
+                "text": "untouchend()",
+                "resource": [
+                  "7"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrj5u856ggs",
+                "created": 1446978761359,
+                "text": "touchcancel()",
+                "resource": [
+                  "7"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrj5c92nlcs",
+                "created": 1446978722234,
+                "text": "untouchcancel()",
+                "resource": [
+                  "7"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrj6ju9nig4",
+                "created": 1446978817117,
+                "text": "hover()",
+                "note": "(in_f,out_f)",
+                "resource": [
+                  "7"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrj6srpym0w",
+                "created": 1446978836554,
+                "text": "unhover()",
+                "resource": [
+                  "7"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrj6yp522o0",
+                "created": 1446978849458,
+                "text": "drag()",
+                "note": "(move_f,start_f,end_f)",
+                "resource": [
+                  "7"
+                ]
+              },
+              "children": []
+            },
+            {
+              "data": {
+                "id": "azrj847bkwg8",
+                "created": 1446978939806,
+                "text": "undrag()",
+                "resource": [
+                  "7"
+                ]
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "data": {
+        "id": "azrdriqm0l4w",
+        "created": 1446963533707,
+        "text": "Paper",
+        "note": null,
+        "resource": [
+          "5"
+        ],
+        "expandState": "collapse"
+      },
+      "children": [
+        {
+          "data": {
+            "id": "azrdrn4i5xc0",
+            "created": 1446963543254,
+            "text": "el()",
+            "note": "(name[,attr])<br />在paper里创建一个元素",
+            "resource": [
+              "5"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azredzo94qo0",
+            "created": 1446965294581,
+            "text": "rect()",
+            "note": "(x,y,w,h[,rx,ry])",
+            "resource": [
+              "5"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azree1ef2vsc",
+            "created": 1446965298340,
+            "text": "circle()",
+            "note": "(x,y,r)",
+            "resource": [
+              "5"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azree3iiw80g",
+            "created": 1446965302942,
+            "text": "image()",
+            "note": "(src,x,y,w,h)",
+            "resource": [
+              "5"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrefs84exsk",
+            "created": 1446965435097,
+            "text": "ellipse()",
+            "note": "(x,y,rx,ry)",
+            "resource": [
+              "5"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrefzyrle04",
+            "created": 1446965451945,
+            "text": "path()",
+            "note": "(str)",
+            "resource": [
+              "5"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azreln6o2wow",
+            "created": 1446965894310,
+            "text": "g()",
+            "note": "(el1,el2....)<br />打组/建立空组",
+            "resource": [
+              "5"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azremhwlwmgo",
+            "created": 1446965961182,
+            "text": "group()",
+            "note": "同g",
+            "resource": [
+              "5"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azremvd4kqw4",
+            "created": 1446965990479,
+            "text": "svg()",
+            "note": "(x,y,w,h,vbx,vby,vbw,vbh)",
+            "resource": [
+              "5"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azreo1c1chcs",
+            "created": 1446966081838,
+            "text": "mask()",
+            "note": "用法同g<br />不同的是结果是一个mask",
+            "resource": [
+              "5"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azreog6ljj4g",
+            "created": 1446966114161,
+            "text": "ptrn()",
+            "note": "(x,y,w,h,vbx,vby,vbw,vbh)",
+            "resource": [
+              "5"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrerf95z0o4",
+            "created": 1446966347232,
+            "text": "use()",
+            "note": "(元件id)<br />(el)<br />",
+            "resource": [
+              "5"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azresfy0lpcg",
+            "created": 1446966427098,
+            "text": "text()",
+            "note": "(x,y,text)",
+            "resource": [
+              "5"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrez8ve8v4k",
+            "created": 1446966960252,
+            "text": "line()",
+            "note": "(x1,y2,x2,y2)",
+            "resource": [
+              "5"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrez9tzitk4",
+            "created": 1446966962343,
+            "text": "polyline()",
+            "note": "([10,10,100,100])<br />(10,10,100,100)",
+            "resource": [
+              "5"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrf2gjof94w",
+            "created": 1446967212050,
+            "text": "polygon()",
+            "note": "([10,10,100,100])<br />(10,10,100,100)",
+            "resource": [
+              "5"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrf3g28t60o",
+            "created": 1446967289360,
+            "text": "gradient()",
+            "note": "(str)<br />建立渐变；可以填充时用<br /><a href='http://snapsvg.io/docs/#Paper.gradient' target='_blank'>官方示例</a>",
+            "resource": [
+              "5"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrf5d31hg8c",
+            "created": 1446967439606,
+            "text": "toString()",
+            "note": "同outerSVG",
+            "resource": [
+              "5"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrf5wu32o00",
+            "created": 1446967482600,
+            "text": "clear()",
+            "note": "清除paper下的所有内容<br />不包括defs",
+            "resource": [
+              "5"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrijoos5e04",
+            "created": 1446977025293,
+            "text": "filter()",
+            "resource": [
+              "5"
+            ]
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "data": {
+        "id": "azre1hgmen4g",
+        "created": 1446964314568,
+        "text": "Matrix",
+        "resource": [
+          "6"
+        ],
+        "expandState": "collapse"
+      },
+      "children": [
+        {
+          "data": {
+            "id": "azre1jzxyego",
+            "created": 1446964320090,
+            "text": "add()",
+            "note": "矩阵相加",
+            "resource": [
+              "6"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azre1ll7u0gs",
+            "created": 1446964323553,
+            "text": "invert()",
+            "note": "倒矩阵",
+            "resource": [
+              "6"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azre1r9tp28g",
+            "created": 1446964335924,
+            "text": "clone()",
+            "resource": [
+              "6"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azre1v8r200k",
+            "created": 1446964344567,
+            "text": "translate()",
+            "note": "(x,y)",
+            "resource": [
+              "6"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azre1zp8cbso",
+            "created": 1446964354270,
+            "text": "scale()",
+            "note": "(x[,y][,cx][,cy])",
+            "resource": [
+              "6"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azre4955v3sw",
+            "created": 1446964531553,
+            "text": "rotate()",
+            "note": "(a,cx,cy)",
+            "resource": [
+              "6"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azre527co9sk",
+            "created": 1446964594812,
+            "text": "x()",
+            "note": "(x,y)<br />返回(x,y)矩阵变换以后的x坐标",
+            "resource": [
+              "6"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azre52zgm6wc",
+            "created": 1446964596512,
+            "text": "y()",
+            "note": "同x",
+            "resource": [
+              "6"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azre6uv4zxcg",
+            "created": 1446964735564,
+            "text": "determinant()",
+            "note": "=a*d-b*c",
+            "resource": [
+              "6"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azre7ff3gyok",
+            "created": 1446964780307,
+            "text": "split()",
+            "note": "获取变换分量；比较使用<br />返回的数据可访问：<br />dx,dy<br />scalex,scaley<br />shear<br />rotate<br />isSimple",
+            "resource": [
+              "6"
+            ]
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "data": {
+        "id": "azrkjt9xpwgk",
+        "created": 1446982677499,
+        "text": "Set",
+        "resource": [
+          "8"
+        ],
+        "expandState": "collapse"
+      },
+      "children": [
+        {
+          "data": {
+            "id": "azrkjxbpbtsk",
+            "created": 1446982686313,
+            "text": "push()",
+            "note": "加入一个元素到set",
+            "resource": [
+              "8"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrkk15hjw0s",
+            "created": 1446982694644,
+            "text": "pop()",
+            "note": "从set移除一个并返回移除的",
+            "resource": [
+              "8"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrkk3rngzcw",
+            "created": 1446982700338,
+            "text": "forEach()",
+            "note": "为每个el执行函数",
+            "resource": [
+              "8"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrkkh6i1awc",
+            "created": 1446982729534,
+            "text": "animate()",
+            "note": "为每个元素指定动画<br /><a href='http://snapsvg.io/docs/#Set.animate' target='_blank'>官方示例</a>",
+            "resource": [
+              "8"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrklhjtsaw4",
+            "created": 1446982808704,
+            "text": "bind()",
+            "resource": [
+              "8"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrknvtlwwwg",
+            "created": 1446982996499,
+            "text": "clear()",
+            "note": "清空set",
+            "resource": [
+              "8"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrknxd31ygo",
+            "created": 1446982999853,
+            "text": "splice()",
+            "note": "同数组splice万能操作",
+            "resource": [
+              "8"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrko47zehc8",
+            "created": 1446983014782,
+            "text": "exclude()",
+            "note": "移除指定元素",
+            "resource": [
+              "8"
+            ]
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "data": {
+        "id": "azrif2st49sg",
+        "created": 1446976664191,
+        "text": "Mina",
+        "resource": [
+          "9"
+        ],
+        "expandState": "collapse"
+      },
+      "children": [
+        {
+          "data": {
+            "id": "azrif68eaeos",
+            "created": 1446976671664,
+            "text": "mina()",
+            "resource": [
+              "9"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrifc6jlg8c",
+            "created": 1446976684612,
+            "text": "time()",
+            "resource": [
+              "9"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrifg5748w0",
+            "created": 1446976693238,
+            "text": "getById()",
+            "resource": [
+              "9"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrifsnxn4g8",
+            "created": 1446976720492,
+            "text": "linear()",
+            "resource": [
+              "9"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrig07h12ww",
+            "created": 1446976736911,
+            "text": "easeout()",
+            "resource": [
+              "9"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrigcqyu9kw",
+            "created": 1446976764211,
+            "text": "easein()",
+            "resource": [
+              "9"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azriget9bw0s",
+            "created": 1446976768704,
+            "text": "easeinout()",
+            "resource": [
+              "9"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrigm2x3bc4",
+            "created": 1446976784525,
+            "text": "backin()",
+            "resource": [
+              "9"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrih5f92ps0",
+            "created": 1446976826630,
+            "text": "bankout()",
+            "resource": [
+              "9"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrih9fh168s",
+            "created": 1446976835350,
+            "text": "elastic()",
+            "resource": [
+              "9"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azriheu63tc8",
+            "created": 1446976847123,
+            "text": "bounce()",
+            "resource": [
+              "9"
+            ]
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "data": {
+        "id": "azr6ik3ij8gk",
+        "created": 1446943083617,
+        "text": "Fragment",
+        "expandState": "collapse",
+        "resource": [
+          "10"
+        ]
+      },
+      "children": [
+        {
+          "data": {
+            "id": "azrdj5ujokgg",
+            "created": 1446962878733,
+            "text": "select()",
+            "resource": [
+              "10"
+            ]
+          },
+          "children": []
+        },
+        {
+          "data": {
+            "id": "azrdj7zxss0s",
+            "created": 1446962883413,
+            "text": "selectAll()",
+            "resource": [
+              "10"
+            ]
+          },
+          "children": []
+        }
+      ]
+    }
+  ]
+}

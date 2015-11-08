@@ -1,6 +1,6 @@
 var dt={};
-var dnl=["effects","expression","xpresso"];
-var padl=[240,320,420,150];
+var dnl=["effects","expression","xpresso","snap"];
+var padl=[240,320,420,360];
 var nodes,links;
 var w=1600;
 var oComp=document.getElementById("comp");
@@ -12,8 +12,7 @@ d3.select("#note")
 	.on("click",function(){
 		d3.event.stopPropagation();
 	});
-d3.select("#comp")
-	.style({"width":w+"px","height":w+"px"})
+d3.select(document)
 	.on("click",function(){
 		d3.selectAll(".circle")
 			.style("stroke","none");
